@@ -4,11 +4,13 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+// 提供一次性报错整个栈
 import warningWithoutStack from 'shared/warningWithoutStack';
 
+// 更新未安装的组件时 警告
 const didWarnStateUpdateForUnmountedComponent = {};
 
+// 仅用在开发环境 警告的 noop， 提供调用者名字和构造者名字，可以帮助定位
 function warnNoop(publicInstance, callerName) {
   if (__DEV__) {
     const constructor = publicInstance.constructor;
@@ -34,6 +36,7 @@ function warnNoop(publicInstance, callerName) {
 /**
  * This is the abstract API for an update queue.
  */
+//  更新队列的抽象API
 const ReactNoopUpdateQueue = {
   /**
    * Checks whether or not this composite component is mounted.
@@ -42,6 +45,7 @@ const ReactNoopUpdateQueue = {
    * @protected
    * @final
    */
+  //  检查复合组件是否挂载
   isMounted: function(publicInstance) {
     return false;
   },
@@ -61,6 +65,9 @@ const ReactNoopUpdateQueue = {
    * @param {?string} callerName name of the calling function in the public API.
    * @internal
    */
+  //  强制更新排队
+  // 进入警告noop，提醒某个组件实例 强制更新;
+  // 强制更新不会触发 shouldComponentUpdate ，但会触发 componentWillUpdate和componentDidUpdate
   enqueueForceUpdate: function(publicInstance, callback, callerName) {
     warnNoop(publicInstance, 'forceUpdate');
   },

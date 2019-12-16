@@ -15,8 +15,10 @@ import {
   REACT_SUSPENSE_TYPE,
   REACT_SUSPENSE_LIST_TYPE,
 } from 'shared/ReactSymbols';
-
+// 基本的 Componet 构造函数 和 PureComponent 构造函数
+// 此时内容几乎相同 PureComponent 的 isPureReactComponent 为 true
 import {Component, PureComponent} from './ReactBaseClasses';
+
 import {createRef} from './ReactCreateRef';
 import {forEach, map, count, toArray, only} from './ReactChildren';
 import {

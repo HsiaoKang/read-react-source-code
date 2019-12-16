@@ -5,9 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import invariant from 'shared/invariant';
+// 不可变的，抛出一个 error
+import invariant from 'shared/ invariant';
+// 提供了一个报错的方法，仅开发环境
 import lowPriorityWarningWithoutStack from 'shared/lowPriorityWarningWithoutStack';
 
+// setState 错误和 forceUpdate 错误队列
 import ReactNoopUpdateQueue from './ReactNoopUpdateQueue';
 
 const emptyObject = {};
