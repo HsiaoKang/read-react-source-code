@@ -4,9 +4,12 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
+// 不可变 error
 import invariant from 'shared/invariant';
+// 错误提示 内部区分开发环境
 import warning from 'shared/warning';
+
+// 类型符号标识
 import {
   getIteratorFn,
   REACT_ELEMENT_TYPE,

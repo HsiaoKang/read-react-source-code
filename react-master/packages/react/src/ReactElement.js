@@ -9,10 +9,12 @@ import invariant from 'shared/invariant';
 import warningWithoutStack from 'shared/warningWithoutStack';
 import {REACT_ELEMENT_TYPE} from 'shared/ReactSymbols';
 
+// 当前拥有者 {current:null || Fiber }
 import ReactCurrentOwner from './ReactCurrentOwner';
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 
+// 应当是Element 保留的props属性
 const RESERVED_PROPS = {
   key: true,
   ref: true,
@@ -20,6 +22,7 @@ const RESERVED_PROPS = {
   __source: true,
 };
 
+//  PropKey PropRef Warning
 let specialPropKeyWarningShown, specialPropRefWarningShown;
 
 function hasValidRef(config) {

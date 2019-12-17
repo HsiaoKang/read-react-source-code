@@ -18,7 +18,7 @@ import {
 // 基本的 Componet 构造函数 和 PureComponent 构造函数
 // 此时内容几乎相同 PureComponent 的 isPureReactComponent 为 true
 import {Component, PureComponent} from './ReactBaseClasses';
-
+// functon 返回 包含 current 属性的对象
 import {createRef} from './ReactCreateRef';
 import {forEach, map, count, toArray, only} from './ReactChildren';
 import {

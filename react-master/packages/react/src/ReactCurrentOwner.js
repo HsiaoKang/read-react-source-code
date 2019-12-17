@@ -6,7 +6,7 @@
  *
  * @flow
  */
-
+// reconciler 协调器
 import type {Fiber} from 'react-reconciler/src/ReactFiber';
 
 /**
