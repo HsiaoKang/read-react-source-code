@@ -6,7 +6,7 @@
  *
  * @flow
  */
-
+// type
 import type {LazyComponent} from 'shared/ReactLazyComponent';
 
 import warningWithoutStack from 'shared/warningWithoutStack';

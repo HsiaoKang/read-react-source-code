@@ -15,11 +15,14 @@ import {
   REACT_ELEMENT_TYPE,
   REACT_PORTAL_TYPE,
 } from 'shared/ReactSymbols';
-
+// element对象检查, 克隆ReactElement,替换key
 import {isValidElement, cloneAndReplaceKey} from './ReactElement';
+// 实例的debug信息
 import ReactDebugCurrentFrame from './ReactDebugCurrentFrame';
 
+// 分隔符
 const SEPARATOR = '.';
+// 子分隔符
 const SUBSEPARATOR = ':';
 
 /**
@@ -28,6 +31,7 @@ const SUBSEPARATOR = ':';
  * @param {string} key to be escaped.
  * @return {string} the escaped key.
  */
+//  转译
 function escape(key) {
   const escapeRegex = /[=:]/g;
   const escaperLookup = {

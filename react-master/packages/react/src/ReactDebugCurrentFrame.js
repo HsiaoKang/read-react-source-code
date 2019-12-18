@@ -10,6 +10,7 @@
 import type {ReactElement} from 'shared/ReactElementType';
 
 import describeComponentFrame from 'shared/describeComponentFrame';
+// 返回组件 name || type
 import getComponentName from 'shared/getComponentName';
 
 const ReactDebugCurrentFrame = {};
