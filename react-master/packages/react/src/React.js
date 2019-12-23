@@ -31,11 +31,14 @@ import {
   jsx,
 } from './ReactElement';
 
-
 import {createContext} from './ReactContext';
+// 懒加载组件
 import {lazy} from './ReactLazy';
+// return forward 包裹对象
 import forwardRef from './forwardRef';
+// type & compare
 import memo from './memo';
+
 import {
   useCallback,
   useContext,

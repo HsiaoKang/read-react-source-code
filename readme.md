@@ -1,6 +1,8 @@
 ## 疑问点
 
-js 文件中 使用了类型
+**Q**:js 文件中 使用了类型
+
+**A**: flow 静态类型检查
 
 **Q**:shard=>ReactSymbols 为什么使用 `Symbol.for` 来创建共享符号？
 
