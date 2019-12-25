@@ -54,7 +54,9 @@ import {
   useTransition,
   useDeferredValue,
 } from './ReactHooks';
+
 import {withSuspenseConfig} from './ReactBatchConfig';
+
 import {
   createElementWithValidation,
   createFactoryWithValidation,
@@ -63,6 +65,7 @@ import {
   jsxWithValidationStatic,
   jsxWithValidationDynamic,
 } from './ReactElementValidator';
+
 import ReactSharedInternals from './ReactSharedInternals';
 import createFundamental from 'shared/createFundamentalComponent';
 import createResponder from 'shared/createEventResponder';

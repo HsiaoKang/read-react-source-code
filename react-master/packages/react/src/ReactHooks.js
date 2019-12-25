@@ -29,7 +29,7 @@ function resolveDispatcher() {
       '3. You might have more than one copy of React in the same app\n' +
       'See https://fb.me/react-invalid-hook-call for tips about how to debug and fix this problem.',
   );
-  return ;
+  return dispatcher;
 }
 
 export function useContext<T>(
