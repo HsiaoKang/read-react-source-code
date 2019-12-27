@@ -70,6 +70,8 @@ import ReactSharedInternals from './ReactSharedInternals';
 import createFundamental from 'shared/createFundamentalComponent';
 import createResponder from 'shared/createEventResponder';
 import createScope from 'shared/createScope';
+
+// 特性 flags
 import {
   enableJSXTransformAPI,
   enableFlareAPI,

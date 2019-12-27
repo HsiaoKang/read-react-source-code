@@ -24,7 +24,7 @@ if (!ReactSharedInternals.hasOwnProperty('ReactCurrentDispatcher')) {
   };
 }
 if (!ReactSharedInternals.hasOwnProperty('ReactCurrentBatchConfig')) {
-  ReactSharedInternals.ReactCurrentBatchConfig = {
+  ReactSharedInternals.  = {
     suspense: null,
   };
 }
